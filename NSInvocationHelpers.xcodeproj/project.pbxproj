@@ -10,7 +10,7 @@
 		F49106D91B431D9B006C3DC4 /* NSInvocationHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F49106D81B431D9B006C3DC4 /* NSInvocationHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F49106DF1B431D9C006C3DC4 /* NSInvocationHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49106D31B431D9B006C3DC4 /* NSInvocationHelpers.framework */; };
 		F49106E61B431D9C006C3DC4 /* NSInvocationHelpersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49106E51B431D9C006C3DC4 /* NSInvocationHelpersTests.m */; };
-		F49106F21B431DD3006C3DC4 /* NSInvocation+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F49106F01B431DD3006C3DC4 /* NSInvocation+Helpers.h */; };
+		F49106F21B431DD3006C3DC4 /* NSInvocation+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F49106F01B431DD3006C3DC4 /* NSInvocation+Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F49106F31B431DD3006C3DC4 /* NSInvocation+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = F49106F11B431DD3006C3DC4 /* NSInvocation+Helpers.m */; };
 /* End PBXBuildFile section */
 
