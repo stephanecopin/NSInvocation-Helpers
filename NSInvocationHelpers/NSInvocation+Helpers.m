@@ -121,9 +121,12 @@
   NSInvocation * clone = [NSInvocation invocationWithMethodSignature:self.methodSignature];
   NSUInteger argCount = self.methodSignature.numberOfArguments;
   for (int i = 0; i < argCount; i++) {
-    char buffer[sizeof(intmax_t)];
-    [self getArgument:(void *)&buffer atIndex:i];
-    [clone setArgument:(void *)&buffer atIndex:i];
+    const char * argumentType = [self.methodSignature getArgumentTypeAtIndex:i];
+    size_t alignedArgumentSize = 0;
+    NSGetSizeAndAlignment(argumentType, NULL, &alignedArgumentSize);
+    char argument[alignedArgumentSize];
+    [self getArgument:&argument atIndex:i];
+    [clone setArgument:&argument atIndex:i];
   }
   return clone;
 }
