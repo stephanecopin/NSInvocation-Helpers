@@ -120,9 +120,9 @@
 - (instancetype)stc_clone {
   NSInvocation * clone = [NSInvocation invocationWithMethodSignature:self.methodSignature];
   NSUInteger argCount = self.methodSignature.numberOfArguments;
-  for (int i = 0; i < argCount; i++) {
+  for (NSInteger i = 0; i < argCount; i++) {
     const char * argumentType = [self.methodSignature getArgumentTypeAtIndex:i];
-    size_t alignedArgumentSize = 0;
+    NSUInteger alignedArgumentSize = 0;
     NSGetSizeAndAlignment(argumentType, NULL, &alignedArgumentSize);
     char argument[alignedArgumentSize];
     [self getArgument:&argument atIndex:i];
